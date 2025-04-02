@@ -29,6 +29,7 @@ This will run with default settings:
 - 60 seconds interval between collections
 - Excludes `kube-system` namespace
 - Uses hardcoded kubeconfig at `/root/.kube/config`
+- Update to your Kubeconfig path in the code
 
 ### Custom Duration and Interval
 ```
