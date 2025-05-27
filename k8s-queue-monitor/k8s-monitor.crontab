@@ -1,0 +1,1 @@
+*/15 * * * * /home/USERNAME/k8s-queue-monitor/wrapper.sh
