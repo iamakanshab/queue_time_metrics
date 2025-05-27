@@ -62,7 +62,7 @@ crontab k8s-monitor.crontab
 crontab -e
 # Add: */15 * * * * /full/path/to/k8s-queue-monitor/wrapper.sh
 eg:
-*/15 * * * * /home/USERNAME/k8s-queue-monitor/wrapper.sh
+*/15 * * * * /home/akbansal/k8s-queue-monitor/wrapper.sh
 ```
 
 ### 4. Verify Setup
