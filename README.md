@@ -4,8 +4,8 @@
 This Python script collects and analyzes Kubernetes pod queue times. Here's how to run it:
 
 ## Prerequisites
-• Python 3 installed 
-• Required Python packages: pandas, openpyxl (for Excel output) 
+• Python 3 installed  
+• Required Python packages: pandas, openpyxl (for Excel output)  
 • Access to a Kubernetes cluster with kubectl configured  
 • Sufficient permissions to read pod information across namespaces  
 
