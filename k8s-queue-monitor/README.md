@@ -22,6 +22,21 @@ cd k8s-queue-monitor
 # Install Python dependencies
 pip3 install -r requirements.txt
 ```
+### Environment Variables 
+
+```bash
+export K8S_QUEUE_MONITOR_OUTPUT_DIR=/your/data/path
+export K8S_QUEUE_MONITOR_KUBECONFIG=/your/kubeconfig/path
+export K8S_QUEUE_MONITOR_KUBECTL_PATH=/usr/local/bin/kubectl
+```
+
+### Default Locations
+
+- **Data**: `~/k8s-queue-monitor-data/`
+- **Kubeconfig**: `~/.kube/config`
+- **kubectl**: `/usr/local/bin/kubectl`
+- **Logs**: `./logs/monitor.log`
+
 
 ### 2. Test Collection 
 
@@ -69,20 +84,6 @@ python3 process_logs.py
 
 ## Configuration
 
-### Environment Variables 
-
-```bash
-export K8S_QUEUE_MONITOR_OUTPUT_DIR=/your/data/path
-export K8S_QUEUE_MONITOR_KUBECONFIG=/your/kubeconfig/path
-export K8S_QUEUE_MONITOR_KUBECTL_PATH=/usr/local/bin/kubectl
-```
-
-### Default Locations
-
-- **Data**: `~/k8s-queue-monitor-data/`
-- **Kubeconfig**: `~/.kube/config`
-- **kubectl**: `/usr/local/bin/kubectl`
-- **Logs**: `./logs/monitor.log`
 
 ## Files Structure
 
