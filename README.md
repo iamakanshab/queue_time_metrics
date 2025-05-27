@@ -12,15 +12,17 @@ This Python script collects and analyzes Kubernetes pod queue times. Here's how 
 ## Installation Steps
 1. Save the script as queue_stats_collector.py
 2. Make it executable:  
-  
-chmod +x queue_stats_collector.py  
+```  
+chmod +x queue_stats_collector.py
+```
 3. Install required dependencies:  
   
 pip install pandas openpyxl  
 ## Running the Script
 ### Basic Usage
+```
 ./queue_stats_collector.py
-
+```
 This will run with default settings:
 • 5 minutes collection duration
 • 60 seconds interval between collections
@@ -28,17 +30,22 @@ This will run with default settings:
 • Uses hardcoded kubeconfig at /root/.kube/config
 • Update to your Kubeconfig path in the code
 ### Custom Duration and Interval
+```
 ./queue_stats_collector.py [duration_minutes] [interval_seconds]
+```
 
 Example:
+```
 ./queue_stats_collector.py 10 30
-
+```
 Run for 720MIN (12HRS) every 5 min
 ./queue_stats_collector.py 720 300
 
 For 12hrs collection
+```
 nohup ./queue_stats_collector.py 5 300 > queue_stats.log 2>&1 &
 nohup ./queue_stats_collector.py 720 300 > queue_stats.log 2>&1 &
+```
 
 This will run for 10 minutes, collecting data every 30 seconds.
 ## Output
