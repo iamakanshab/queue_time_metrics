@@ -14,7 +14,7 @@ Automatically monitor Kubernetes pod queue times with 7-day historical tracking.
 
 ```bash
 # Git clone the repository
-https://github.com/iamakanshab/queue_time_metrics.git
+git clone https://github.com/iamakanshab/queue_time_metrics.git
 
 # Change directory to k8s-queue-monitor
 cd k8s-queue-monitor
