@@ -47,8 +47,9 @@ python3 queue_time_collector.py
 ```
 
 ### 3. Setup Automated Collection
-# Make the wrapper executable
+
 ```bash
+# Make the wrapper executable
 chmod +x wrapper.sh
 ```
 
