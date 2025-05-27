@@ -47,6 +47,10 @@ python3 queue_time_collector.py
 ```
 
 ### 3. Setup Automated Collection
+# Make the wrapper executable
+```bash
+chmod +x wrapper.sh
+```
 
 ```bash
 # Method 1: Import crontab file 
