@@ -1,6 +1,6 @@
 # Instructions for 7 day collection are located within the k8s-queue-monitor folder
 
-# Instructions to Run the Queue Time Statistics Collection Script(12hr collection)
+## Instructions to Run the Queue Time Statistics Collection Script(12hr collection)
 This Python script collects and analyzes Kubernetes pod queue times. Here's how to run it:
 
 ## Prerequisites
@@ -15,9 +15,10 @@ This Python script collects and analyzes Kubernetes pod queue times. Here's how 
 ```  
 chmod +x queue_stats_collector.py
 ```
-3. Install required dependencies:  
-  
-pip install pandas openpyxl  
+3. Install required dependencies:
+```    
+pip install pandas openpyxl
+```  
 ## Running the Script
 ### Basic Usage
 ```
