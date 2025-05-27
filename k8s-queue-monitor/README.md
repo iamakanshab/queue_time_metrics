@@ -62,12 +62,6 @@ crontab k8s-monitor.crontab
 crontab -e
 # Add: */15 * * * * /full/path/to/k8s-queue-monitor/wrapper.sh
 eg:
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
-K8S_QUEUE_MONITOR_KUBECTL_PATH=/usr/local/bin/kubectl
-K8S_QUEUE_MONITOR_KUBECONFIG=/home/USERNAME/.kube/config
-K8S_QUEUE_MONITOR_OUTPUT_DIR=/home/USERNAME/k8s-queue-monitor-data
-
 */15 * * * * /home/USERNAME/k8s-queue-monitor/wrapper.sh
 ```
 
