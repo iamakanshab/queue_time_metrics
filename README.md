@@ -51,11 +51,12 @@ nohup ./queue_stats_collector.py 720 300 > queue_stats.log 2>&1 &
 This will run for 10 minutes, collecting data every 30 seconds.
 ## Output
 The script creates a timestamped directory (queue_stats_YYYYMMDD_HHMMSS) containing:
-• all_queue_times.csv/.xlsx: Raw data for all pods
-• namespace_stats.csv/.xlsx: Statistics grouped by namespace
-• top_pods.csv/.xlsx: Details on pods with longest queue times
-• queue_time_summary.xlsx: Summary report with overall statistics
+• all_queue_times.csv/.xlsx: Raw data for all pods  
+• namespace_stats.csv/.xlsx: Statistics grouped by namespace  
+• top_pods.csv/.xlsx: Details on pods with longest queue times  
+• queue_time_summary.xlsx: Summary report with overall statistics  
 ## Notes
-• The script ignores pods with unreasonable queue times (>30 days)
-• It uses a hardcoded kubeconfig path at /root/.kube/config
-• It will unset any existing KUBECONFIG environment variable
+• The script ignores pods with unreasonable queue times (>30 days)  
+• It uses a hardcoded kubeconfig path at /root/.kube/config  
+• It will unset any existing KUBECONFIG environment variable  
+
