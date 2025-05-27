@@ -64,8 +64,8 @@ crontab -e
 eg:
 */15 * * * * /home/akbansal/k8s-queue-monitor/wrapper.sh
 
-For each cloud provider we would have to add the paths to their CLI's in the wrapper.sh or the cronjob , a example
-is included for OCI
+For each cloud provider we would have to add the paths to their CLI's in the wrapper.sh or the cronjob ,
+an example is included for OCI
 ```
 
 ### 4. Verify Setup
