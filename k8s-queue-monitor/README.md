@@ -65,7 +65,7 @@ eg:
 # Check cron job was added
 crontab -l | grep k8s
 
-# Wait 30+ minutes, then check logs
+# Wait 30+ minutes, then check logs ( the logs folder is created after running the wrapper.sh script)
 tail -f logs/monitor.log
 ```
 
